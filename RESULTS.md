@@ -1,21 +1,13 @@
-# Results provenance
+# Original validation results
 
-No new Intel training or test evaluation was run during portfolio preparation.
+The original group notebook saved the following outputs. These are historical validation results, not reruns or held-out test scores.
 
-The original Assignment3 notebook contains these saved outputs:
+| Model | Original saved output | Accuracy | Report support |
+| --- | --- | ---: | ---: |
+| Frozen ResNet50V2 | Scalar validation evaluation | 0.7485795617103577 (74.86%) | Not printed |
+| Frozen ResNet50V2 | Validation classification report | 0.75 (rounded) | 2,112 |
+| Custom CNN | Validation classification report | 0.69 (rounded) | 2,112 |
 
-| Model | Original evaluation | Saved accuracy | Support |
-| --- | --- | --- | --- |
-| Frozen ResNet50V2 | Validation, cell 4 scalar evaluation | 0.7485795617103577 | Not printed by scalar evaluation |
-| Frozen ResNet50V2 | Validation classification report, cell 5 | 0.75 (rounded) | 2,112 |
-| Custom CNN | Validation classification report, cell 7 | 0.69 (rounded) | 2,112 |
+These came from source notebook cells 4, 5, and 7 respectively (zero-based JSON indexes), recorded before the notebook was reorganized and outputs cleared. The original notebook belongs to the [group source repository](https://github.com/conleypj17/CNN_Image_Classification).
 
-Cell numbers above are zero-based source JSON cell indexes. Saved outputs are
-historical evidence, not reruns. The original val/test source was shuffled before
-take/skip, so stable held-out separation cannot be assumed. Original ResNet50V2
-received [0,1] values instead of expected [-1,1]. The corrected preprocessing and
-split change the experiment; old numbers cannot validate the new implementation.
-
-After an explicitly authorized training run, evaluate the saved models on the
-saved test manifest and report `test-results.json` with configuration, environment,
-class support and plots. Synthetic test metrics must never be reported as Intel results.
+The original ResNet50V2 input scaling was [0,1], and shuffled take/skip splitting did not guarantee stable held-out membership. The current implementation uses [-1,1] preprocessing and fixed file-level splits. It has not been retrained, so the original validation scores do not measure the revised pipeline. No new Intel test accuracy is available.
