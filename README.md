@@ -78,5 +78,4 @@ they do not establish real-data accuracy or prove a full training run succeeds.
 
 This work derives from `Assignment3.ipynb` in the collaborative
 [CNN_Image_Classification repository](https://github.com/conleypj17/CNN_Image_Classification).
-Credit the original team rather than presenting the notebook as solely authored work.
-Local Git history identifies Patrick Conley; see ATTRIBUTION.md for publication prerequisites.
+This was a group project including members Patrick Conley, Logan McKinney, and Greg Pologruto
