@@ -2,9 +2,8 @@
 
 - Original artifact: `Assignment3.ipynb` (fingerprint in SOURCE.json).
 - Collaborative source: https://github.com/conleypj17/CNN_Image_Classification
-- Local Git history records Patrick Conley as author of the six available commits.
-  This is evidence of recorded authorship, not proof that no other teammates contributed.
-  Confirm the complete team and the portfolio owner's personal role before publication.
+- This was a team project including work from members Logan McKinney, Patrick Conley, 
+  and Greg Pologruto
 - Preserve collaborative credit; do not describe the original notebook as solely authored.
 - Portfolio preparation adds reproducible file splitting, content deduplication,
   correct V2 preprocessing, configurable training/evaluation, ordered notebook cells,
